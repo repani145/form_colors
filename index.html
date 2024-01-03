@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: aqua;
+            z-index: -1;
+        }
+        label[for="fname"]{
+            color: blue;
+        }
+        label[for="lname"]{
+            color: blueviolet;
+        }
+        label[for="pswd"]{
+            color: brown;
+        }
+        input[type="fname"]{
+            background-color: black;
+            border-radius: 10px;
+        }
+        input[type="lname"]{
+            background-color: chartreuse;
+            border-radius: 10px;
+        }
+        input[type="email"]{
+            background-color: rgb(191, 221, 221);
+            border-radius: 10px;
+        }
+        input[type="password"]{
+            background-color: gold;
+            border-radius: 10px;
+        }
+        input[type="submit"]{
+            border-radius: 10px;
+            background-color:navy;
+            color: white;
+        }
+        button{
+            background-color: violet;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="./login.html"><fieldset>
+        <legend>sign_up form</legend>
+        <label for="fname">First Name</label>
+        <input type="fname" name="fname" id="fname" placeholder="First Name" /><br><br>
+        <label for="lname">Last Name</label>
+        <input type="lname" name="lname" id="lname" placeholder="Last Name" /><br><br>
+        <label for="mail"></label>
+        <input type="email" name="mail" id="mail" placeholder="Enter your email" /><br><br>
+        <label for="pswd">password</label>
+        <input type="password" name="pswd" id="pswd" placeholder="Create your password" /><br><br>
+        <input type="submit"/>
+        <button formaction="./login.html">Goto Login_page</button>
+        </fieldset>
+    </form>
+</body>
+</html>
